@@ -1,0 +1,485 @@
+# this is used for the destination API to find the "location" for skyscanner
+Acapulco
+Aguascalientes
+Agualeguas
+Álamos
+Apatzingán
+Atizapán
+Cabo
+Campeche
+Cananea
+Cancún
+Cedros
+Celaya
+Chetumal
+Chichen
+Chihuahua
+Chilpancingo
+Ciudad 
+Colima
+Comitán
+Cozumel
+Cuernavaca
+Culiacán
+Cuajinicuilapa
+Durango
+Ensenada
+Guadalajara
+Guasave
+Guaymas
+Guerrero
+Hermosillo
+Huatulco
+Guadalupe
+Isla
+Isla
+Ixtapa-Zihuatanejo
+Ixtepec
+La
+Lagos
+Lázaro
+León
+Loreto
+Los
+Los
+Manzanillo
+Matamoros
+Matehuala
+Mazatlán
+Mérida
+Mexicali
+Mexico
+Minatitlán
+Monclova
+Monterrey
+Monterrey
+Morelia
+Mulegé
+Navojoa
+Nogales
+Nuevo
+Nuevo
+Oaxaca
+Pachuca
+Palenque
+Pie
+Piedras
+Playa
+Poza
+Puebla
+Puerto
+Puerto
+Puerto
+Querétaro
+Querétaro
+Reynosa
+Salina
+Saltillo
+San
+San
+San
+San
+Zumpango
+Santa
+Tampico
+Tamuín
+Tapachula
+Teacapan
+Tehuacán
+Tepic
+Tijuana
+Tizimín
+Toluca
+Torreón
+Tulum
+Tuxpan
+Tuxtla
+Tuxtla
+Uruapan
+Veracruz
+Villahermosa
+Xalapa
+Zacatecas
+Zamora
+Zapopan
+Birmingham
+Dothan
+Huntsville
+Mobile
+Montgomery
+Anchorage
+Anchorage
+Merrill Field
+Anchorage
+Aniak
+Barrow
+Bethel
+Cordova
+Deadhorse
+Dillingham
+Fairbanks
+Galena
+Homer
+Juneau
+Kenai
+Ketchikan
+King Salmon
+Kodiak
+Kotzebue
+Nome
+Petersburg
+Sitka
+St. Mary's
+Unalakleet
+Unalaska
+Valdez
+Wrangell
+Yakutat
+Bullhead City
+Flagstaff
+Grand Canyon
+Mesa
+Page
+Peach Springs
+Phoenix
+Tucson
+Yuma
+Fayetteville
+Fort Smith
+Little Rock
+Texarkana
+ArcataEureka
+Bakersfield
+Burbank
+Fresno
+Long Beach
+Los Angeles
+Mammoth Lakes
+Monterey
+Oakland
+Ontario
+Orange County
+Palm Springs
+Redding
+Sacramento
+San Diego
+San Francisco
+San Jose
+San Luis Obispo
+Santa Barbara
+Santa Maria
+Santa Rosa
+Stockton
+Aspen
+Colorado Springs
+Denver
+Durango
+EagleVail
+Grand Junction
+Gunnison
+Hayden
+Montrose
+Hartford
+New Haven
+Wilmington
+Daytona Beach
+Fort Lauderdale
+Fort Myers
+Fort Walton Beach
+Gainesville
+Jacksonville
+Key West
+Melbourne
+Miami
+Orlando
+Panama City Beach
+Pensacola
+Punta Gorda
+Sanford
+Sarasota
+St. Augustine
+Northeast Florida Regional Airport
+St. Petersburg
+Tallahassee
+Tampa
+West Palm Beach
+Albany
+Atlanta
+Augusta
+Brunswick
+Columbus
+Savannah
+Valdosta
+Hilo
+Honolulu
+Kahului
+Kailua-Kona
+Kaunakakai
+Lanai City
+Lihue
+Boise
+Idaho Falls
+Lewiston
+Pocatello
+Sun Valley
+Twin Falls
+Belleville
+Bloomington
+Champaign
+Chicago
+Chicago
+Marion
+Moline
+Peoria
+Quincy
+Rockford
+Springfield
+Evansville
+Fort Wayne
+Indianapolis
+South Bend
+Cedar Rapids
+Des Moines
+Dubuque
+Sioux City
+Waterloo
+Garden City
+Manhattan
+Topeka
+Wichita
+CincinnatiCovington
+Lexington
+Louisville
+Owensboro
+Paducah
+Alexandria
+Baton Rouge
+Lafayette
+Lake Charles
+Monroe
+New Orleans
+Shreveport
+Bangor
+Portland
+Presque Isle
+Rockland
+Baltimore
+Hagerstown
+Salisbury
+Boston
+Hyannis
+Nantucket
+Provincetown
+Vineyard Haven
+Worcester
+Alpena
+Detroit
+Escanaba
+Flint
+Grand Rapids
+Hancock
+Iron Mountain
+Kalamazoo
+Lansing
+Marquette
+Muskegon
+Pellston
+Saginaw
+Sault Ste. Marie
+Traverse City
+Bemidji
+Brainerd
+Duluth
+Hibbing
+International Falls
+Minneapolis
+Rochester
+St. Cloud
+Columbus
+Gulfport Biloxi
+Jackson
+Columbia
+Joplin
+Kansas City
+Springfield
+St. Louis
+Billings
+Bozeman
+Butte
+Great Falls
+Helena
+Kalispell
+Missoula
+Sidney
+Grand Island
+Lincoln
+Omaha
+Boulder City
+Elko
+Las Vegas
+North Las Vegas
+Reno
+Lebanon
+Manchester
+Portsmouth
+Atlantic City
+Trenton
+New York Newark
+Albuquerque
+Hobbs
+Roswell
+Santa Fe
+Albany
+Binghamton
+Buffalo
+Elmira
+Farmingdale
+Islip
+Ithaca
+New York
+New York
+Newburgh
+Niagara Falls
+Plattsburgh
+Rochester
+Syracuse
+Watertown
+White Plains
+Asheville
+Charlotte
+Concord
+Fayetteville
+Greensboro
+Greenville
+Jacksonville
+New Bern
+Raleigh
+Wilmington
+Bismarck
+Dickinson
+Fargo
+Grand Forks
+Minot
+Williston
+Akron
+Cincinnati
+Cleveland
+Columbus
+Columbus
+Dayton
+Toledo
+Youngstown
+Lawton
+Oklahoma City
+Tulsa
+Eugene
+Medford
+North Bend
+Portland
+Redmond
+Allentown
+Erie
+Harrisburg
+Latrobe
+Philadelphia
+Pittsburgh
+State College
+Wilkes-Barre
+Williamsport
+Block Island
+Providence
+Westerly
+Charleston
+Columbia
+Florence
+Greenville
+Hilton Head
+Myrtle Beach
+Aberdeen
+Rapid City
+Sioux Falls
+Chattanooga
+Knoxville
+Memphis
+Nashville
+Tri-Cities
+Abilene
+Amarillo
+Austin
+Beaumont
+Brownsville
+College Station
+Corpus Christi
+Dallas
+Dallas
+El Paso
+Harlingen
+Houston
+Houston
+Killeen
+Laredo
+Longview
+Lubbock
+McAllen
+Midland
+San Angelo
+San Antonio
+Tyler
+Waco
+Wichita Falls
+Cedar City
+Ogden
+Provo
+Salt Lake City
+St. George
+Burlington
+Charlottesville
+Lynchburg
+Newport News
+Norfolk
+Richmond
+Roanoke
+Washington, D.C. Arlington County
+Washington, D.C. Dulles Chantilly
+Bellingham
+Friday Harbor
+Pasco
+Pullman Moscow, Idaho
+Seattle
+Seattle Tacoma (SeaTac
+Spokane
+Walla Walla
+Wenatchee
+Yakima
+Charleston
+Clarksburg
+Huntington
+Morgantown
+Appleton
+Eau Claire
+Green Bay
+La Crosse
+Madison
+Milwaukee
+Mosinee
+Rhinelander
+Casper
+Cody
+Gillette
+Jackson Hole
+Laramie
+Rock Springs
+Pago Pago, Tutuila
+Agana Tamuning
+Obyan, Saipan Island
+Rota Island
+Tinian Island
+Aguadilla
+Ceiba
+Culebra
+Ponce
+San Juan Carolina
+San Juan Miramar
+Vieques
+Charlotte Amalie, St. Thomas
+Christiansted, St. Croix
