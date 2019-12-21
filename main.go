@@ -55,7 +55,7 @@ func main() {
 					continue
 				}
 
-				bestPrice, err := ss.PollSession(sessionKey)
+				bestPrice, err := ss.PollSession(sessionKey, traveler.LocationCode, location.PlaceID)
 				if err != nil {
 					// try again. fake error
 					if strings.Contains(err.Error(), "Rate limit has been exceeded") {

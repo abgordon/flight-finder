@@ -17,7 +17,7 @@ type SkyScanner interface {
 	List() []Location
 	GetLocation(location string) ([]Location, error)
 	InitSession(outboundDate, inboundDate, departureAirport string, destinationAirport string) (string, error)
-	PollSession(sessionKey string) (*PricingOption, error)
+	PollSession(sessionKey, departureAirport, destinationAirport string) (*PricingOption, error)
 }
 
 type skyScanner struct {
@@ -79,8 +79,9 @@ func (s *skyScanner) InitSession(outboundDate, inboundDate, departureAirport str
 
 // PollSession can sort by price, a src airport, and an _array_ of dst airports
 // with this, we can sift through a large result set in-memory with 1 http call
-func (s *skyScanner) PollSession(sessionKey string) (*PricingOption, error) {
-	pollUrl := fmt.Sprintf("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/%s", sessionKey)
+func (s *skyScanner) PollSession(sessionKey, departureAirport, destinationAirport string) (*PricingOption, error) {
+
+	pollUrl := fmt.Sprintf("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/%s?sortType=price&sortOrder=asc&originAirports=%s&destinationAirports=%s&pageIndex=0&pageSize=10", sessionKey, departureAirport, destinationAirport)
 	fmt.Println("pollurl:", pollUrl)
 	initReq := newAuthedMethod(http.MethodGet, pollUrl, &bytes.Buffer{})
 	res, err := s.client.Do(initReq)
