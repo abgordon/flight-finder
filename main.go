@@ -36,11 +36,7 @@ func main() {
 	// ss.PrettyPrint()
 
 	travelers := map[string]*util.Traveler{
-		// "andrew": util.NewTraveler("andrew", "DEN-sky"),
-		// "graham": util.NewTraveler("graham", "DEN-sky"),
-		// "john": util.NewTraveler("john", "PIT-sky"),
-		"kris": util.NewTraveler("kris", "PHL-sky"),
-		// "aj": util.NewTraveler("aj", "ORD-sky"),
+		"andrew": util.NewTraveler("andrew", "DEN-sky"),
 	}
 
 	outboundDate := "2020-01-01"
@@ -64,6 +60,8 @@ func main() {
 		}
 	}()
 
+	// todo: most expensivest
+	//
 	var cheapest float64
 	var tripCostTotal float64
 	var cheapestTripKey string
