@@ -105,11 +105,7 @@ func (s *skyScanner) PollSession(sessionKey, departureAirport, destinationAirpor
 	if len(p.Itineraries) > 0 {
 		itin := p.Itineraries[0]
 		if len(itin.PricingOptions) > 0 {
-			for _, price := range itin.PricingOptions {
-				fmt.Println("cost:", price.Price)
-			}
 			bestPrice := itin.PricingOptions[0]
-			fmt.Println("returning:", bestPrice.Price)
 			return bestPrice, nil
 		}
 	}
