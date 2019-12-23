@@ -17,4 +17,5 @@ Thus most of the horrendous looking collections of ifs and sleeps and weird logs
 - less kludgy code
 - write results to file
 - most expensive flight feature
+- actually, sort everything by price, and put it in one big list as the output
 - dockerize it, put it on aws, build a frontend, write a server that outputs results to communicate with front....

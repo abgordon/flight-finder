@@ -27,16 +27,32 @@ const (
 
 func main() {
 
-	ss, err := util.NewSkyScanner("./util/airports-test-data.json")
+	ss, err := util.NewSkyScanner("./util/airports.json")
 	if err != nil {
 		fmt.Printf("err instantiating API client: %v\n", err)
 		os.Exit(1)
+	}
+
+	// filtered := util.FilterJSON(ss.List(), "Canada", "Cuba", "Dominican Republic", "United States", "Mexico")
+	filtered := util.FilterJSON(ss.List(), "Cuba", "Dominican Republic", "United States")
+	for i, l := range filtered.Places {
+		fmt.Printf("%d: %+v\n", i, l)
 	}
 
 	// ss.PrettyPrint()
 
 	travelers := map[string]*util.Traveler{
 		"andrew": util.NewTraveler("andrew", "DEN-sky"),
+		"graham": util.NewTraveler("graham", "DEN-sky"),
+		"john":   util.NewTraveler("john", "PIT-sky"),
+		"kris":   util.NewTraveler("kris", "PHL-sky"),
+		"skawt":  util.NewTraveler("skawt", "PHL-sky"),
+		"aj":     util.NewTraveler("aj", "ORD-sky"),
+		"dusty":  util.NewTraveler("dusty", "CLT-sky"),
+		"tim":    util.NewTraveler("tim", "IAD-sky"),
+		"dan":    util.NewTraveler("dan", "SFO-sky"),
+		"zta":    util.NewTraveler("zta", "PHX-sky"),
+		"sow":    util.NewTraveler("sow", "JFK-sky"),
 	}
 
 	outboundDate := "2020-01-01"
@@ -53,7 +69,7 @@ func main() {
 				requests = 0
 				rateLimitExceeded = false
 			case _ = <-time.After(100 * time.Millisecond):
-				if requests > 60 {
+				if requests > 60 { // what is the fucking rate limit
 					rateLimitExceeded = true
 				}
 			}
@@ -67,7 +83,7 @@ func main() {
 	var cheapestTripKey string
 	cheapest = 99999999.00 // arbitrary big number
 	itineraries := map[string][]*util.PricingOption{}
-	for _, location := range ss.List() {
+	for _, location := range filtered.Places {
 		tripCostTotal = 0
 		fmt.Println("initiating session for", location)
 
@@ -103,7 +119,7 @@ func main() {
 					continue
 				}
 
-				bestPrice, err = ss.PollSession(sessionKey, traveler.LocationCode, location.PlaceID)
+				bestPrice, err = ss.PollSession(sessionKey, traveler.LocationCode, location.PlaceID, location.PlaceName)
 				requests++
 				if err != nil {
 					// try again. fake error
@@ -139,6 +155,9 @@ func main() {
 			cheapestTripKey = location.PlaceID
 			cheapest = tripCostTotal
 		}
+
+		// sort and write EVERY time bc this thing takes forever, and a write is cheap
+		util.WriteResultsToFile(travelers, itineraries)
 	}
 
 	fmt.Printf("RESULTS: cheapest trip: [ %s ] cheapest cost: [ %f ] \n", cheapestTripKey, cheapest)
